@@ -1,1 +1,36 @@
+# Misc
+/Starcraft/python-sc2.DS_Store
 
+# Python + mypy + pytest
+/Starcraft/python-sc2/__pycache__/
+/Starcraft/python-sc2/*.pyc
+
+/Starcraft/python-sc2/.mypy_cache/
+/Starcraft/python-sc2/.pytest_cache/
+
+/Starcraft/python-sc2/build/
+/Starcraft/python-sc2/dist/
+/Starcraft/python-sc2/*.egg-info/
+
+/Starcraft/python-sc2/.cache/
+
+# SC2 things
+/Starcraft/python-sc2/maps/
+/Starcraft/python-sc2/mini_games/
+
+/Starcraft/python-sc2/*.SC2Replay
+
+/Starcraft/python-sc2/.hypothesis/
+
+# Editors
+/Starcraft/python-sc2/.idea/
+/Starcraft/python-sc2/.vscode/
+.vscode/
+
+# Code coverage
+/Starcraft/python-sc2/.coverage
+/Starcraft/python-sc2//htmlcov
+
+/Starcraft/python-sc2//bat_files/temp/
+
+/Starcraft/python-sc2//docs
