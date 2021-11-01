@@ -1,5 +1,8 @@
+#import json
+
 def parse(command):
-    parsedCommand = command
+    #split = json.loads(command)
+    #parsedCommand = split
     return command
 
 def main():

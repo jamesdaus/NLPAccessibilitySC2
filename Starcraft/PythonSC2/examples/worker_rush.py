@@ -15,7 +15,7 @@ def main():
         #maps.get("Abyssal Reef LE"),
         maps.get("BlackburnAIE"),
         [Bot(Race.Zerg, WorkerRushBot()), Computer(Race.Protoss, Difficulty.Medium)],
-        realtime=True,
+        realtime=False,
         save_replay_as="WorkerRush.SC2Replay",
     )
 

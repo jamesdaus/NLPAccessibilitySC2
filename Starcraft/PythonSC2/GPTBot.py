@@ -1,21 +1,22 @@
 import sc2
 from sc2 import run_game, maps, Race, Difficulty
 from sc2.player import Bot, Computer
-
-#import ast
-import GPTOutput
-
-currentCommand = ''
+from sc2.unit import Unit
+from sc2.units import Units
+from sc2.ids.ability_id import AbilityId
+from sc2.ids.unit_typeid import UnitTypeId
 
 class GPTBot(sc2.BotAI):
     async def on_step(self, iteration):
-        if (iteration % 50 == 0):
-            with open('command.txt', 'r') as commandFile:
-                print(commandFile.read())
-
-def updateCommands(newCommand):
-    currentCommand = newCommand
-
+        if (iteration % 5 == 0):
+            with open('command.txt', 'r+') as commandFile: #execute, clear, wait for more input
+                command = commandFile.read()
+                try:
+                    print(command)
+                    exec(command)
+                except:
+                    print(f'Error in {command}')
+                commandFile.truncate(0)
 def main():
     run_game(
         maps.get("BlackburnAIE"),
