@@ -21,14 +21,16 @@ class GPTBot(sc2.BotAI):
     async def on_step(self, iteration):
         command = ''
         try:
+            print('in try')
             parsedAudio = self.get_audio()
+            print(f"parsed audio: {parsedAudio}")
             if parsedAudio:
                 command = self.create_command(parsedAudio)
             if (self.state.chat):
                 pass
                 #Insert chat commands
-        except:
-            pass
+        except Exception as e:
+            print("Error is {0}".format(e))
         if (iteration % 5 == 0):
             if command:
                 try:
@@ -37,15 +39,17 @@ class GPTBot(sc2.BotAI):
                 except:
                     Client.debug_text_simple(self.client, f'Error in {command}')
 
-    def create_command(audio):
+    def create_command(self, audio):
         command = GPTOutput.generateCommand(audio)
         with open('log.txt', 'a') as logFile:
             logFile.write('Command: {}\n'.format(command))
         return command
 
-    def get_audio():
+    def get_audio(self):
         with open('voice.txt', 'r+') as audioFile: #read, log, clear
+            print('pre-read')
             parsedAudio = audioFile.read()
+            print(f"in get_audio: {parsedAudio}")
             if parsedAudio:
                 with open('log.txt', 'a') as logFile:
                     logFile.write('Audio: {}\n'.format(parsedAudio))

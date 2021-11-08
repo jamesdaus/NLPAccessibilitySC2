@@ -1,10 +1,12 @@
 import speech_recognition as sr
 
 def callback(recognizer, audio):
+    print('Speech Heard!')
     try:
         # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
         parsedAudio = recognizer.recognize_google(audio)
-        return parsedAudio
+        with open('voice.txt', 'w') as audioFile:
+            audioFile.write(parsedAudio)
     except sr.UnknownValueError:
         print("Google could not understand audio")
     except sr.RequestError as e:
@@ -18,9 +20,8 @@ class AudioParser:
         self.r.pause_threshold = .5
         with self.m as source:
             print('Shh!')
-            self.r.adjust_for_ambient_noise(source, duration=3)
+            self.r.adjust_for_ambient_noise(source, duration=5)
 
-    '''
     def callback(self, recognizer, audio):
         try:
             # to use another API key, use `r.recognize_google(audio, key="GOOGLE_SPEECH_RECOGNITION_API_KEY")`
@@ -32,7 +33,6 @@ class AudioParser:
             print("Google could not understand audio")
         except sr.RequestError as e:
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
-    '''
     
     def listenBackground(self):
         with self.m as source:

@@ -3,15 +3,18 @@ import openai
 openai.api_key = ''
 #OPENAI_API_KEY
 
-start_sequence = "\n"
-restart_sequence = "\n#"
-training = "# Converting player commands into Starcraft 2 actions using pysc2 and Python 3\n\n# make a hydra\nself.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)\n# make 10 hydras\nfor x in range(10): \n  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)"
-#turn into separate file
+#start_sequence = "\n"
+#restart_sequence = "\n# "
+#training = "# Converting player commands into Starcraft 2 actions using pysc2 and Python 3\n\n# make a hydra\nself.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)\n# make 10 hydras\nfor x in range(10): \n  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)"
+
+with open('data.txt', 'r') as dataFile:
+    training = dataFile.read().replace('\r\n', '\n').replace('\r', '\n')
+
 
 def generateCommand(userInput):
     command = openai.Completion.create(
         engine="davinci-codex",
-        prompt= training + userInput,
+        prompt= training + '# ' + userInput + '\n',
         temperature=0,
         max_tokens=64,
         top_p=1,

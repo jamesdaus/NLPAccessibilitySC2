@@ -1,0 +1,6 @@
+# Converting player commands into Starcraft 2 actions using pysc2 and Python 3
+# make a hydra
+self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+# make 10 hydras
+for x in range(10):
+    self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
