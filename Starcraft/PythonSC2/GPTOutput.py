@@ -1,6 +1,7 @@
 import openai
-from AudioInput import AudioParser
-openai.api_key = 'secret'
+#import env
+openai.api_key = ''
+#OPENAI_API_KEY
 
 start_sequence = "\n"
 restart_sequence = "\n#"
@@ -24,13 +25,14 @@ def updateCommand(command):
     with open('command.txt', 'w') as commandFile:
         commandFile.write(command)
     with open('log.txt', 'a') as commandFile:
-        commandFile.write('\nGenerated Command: {}\n'.format(command))
+        commandFile.write('\nGenerated Command: {}\n\n'.format(command))
 
 def printCommand():
     with open('command.txt', 'r') as commandFile:
         print(commandFile.read())
 
 def main():
+    '''
     audioParser = AudioParser()
     while True:
         #command = generateCommand(input('Enter Command: '))
@@ -39,6 +41,7 @@ def main():
             command = generateCommand(voice)
             updateCommand(command)
             printCommand()
+    '''
 
 if __name__ == "__main__":
     main()

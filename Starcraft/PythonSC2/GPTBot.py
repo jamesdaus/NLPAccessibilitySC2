@@ -1,3 +1,6 @@
+import AudioInput
+import GPTOutput
+
 import sc2
 from sc2 import run_game, maps, Race, Difficulty
 from sc2.player import Bot, Computer
@@ -5,18 +8,54 @@ from sc2.unit import Unit
 from sc2.units import Units
 from sc2.ids.ability_id import AbilityId
 from sc2.ids.unit_typeid import UnitTypeId
+from sc2 import game_state
+from sc2.client import Client
 
 class GPTBot(sc2.BotAI):
+    def __init__(self):
+        print('init...')
+        self.audioParser = AudioInput.AudioParser()
+        self.audioParser.listenBackground()
+        print('Listening :)')
+
     async def on_step(self, iteration):
+        command = ''
+        try:
+            parsedAudio = self.get_audio()
+            if parsedAudio:
+                command = self.create_command(parsedAudio)
+            if (self.state.chat):
+                pass
+                #Insert chat commands
+        except:
+            pass
         if (iteration % 5 == 0):
-            with open('command.txt', 'r+') as commandFile: #execute, clear, wait for more input
-                command = commandFile.read()
+            if command:
                 try:
                     print(command)
                     exec(command)
                 except:
-                    print(f'Error in {command}')
-                commandFile.truncate(0)
+                    Client.debug_text_simple(self.client, f'Error in {command}')
+
+    def create_command(audio):
+        command = GPTOutput.generateCommand(audio)
+        with open('log.txt', 'a') as logFile:
+            logFile.write('Command: {}\n'.format(command))
+        return command
+
+    def get_audio():
+        with open('voice.txt', 'r+') as audioFile: #read, log, clear
+            parsedAudio = audioFile.read()
+            if parsedAudio:
+                with open('log.txt', 'a') as logFile:
+                    logFile.write('Audio: {}\n'.format(parsedAudio))
+                audioFile.truncate(0)
+        return parsedAudio
+
+
+#This script controls and calls everything, imports AudioInput and GPTOutput to call gather audio data,
+#send convert call, and exec.
+
 def main():
     run_game(
         maps.get("BlackburnAIE"),
@@ -24,6 +63,7 @@ def main():
         realtime=True,
         save_replay_as="GPTBot.SC2Replay",
     )
+    #self.audioParser.stopListening()
 
 
 if __name__ == "__main__":
