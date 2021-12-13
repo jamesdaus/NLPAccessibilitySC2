@@ -1,2 +1,2326 @@
-Audio: it's never getting down this far
+Audio: hydralisk
 Command: 
+Audio: make Overlord
+Command: for x in range(10):
+    self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: make a Zergling
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+Audio: make a drone
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: attack their base
+Command: self.attack(self.units(UnitTypeId.ZERGLING))
+
+Audio: great job
+Command: self.chat_send("Great job!")
+
+Audio: make a drone
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: make a drone
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: make a drone
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: send my Overlord to the enemy base make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: make a drone
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: shouldn't be
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+Audio: actually maybe the command
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: it's so satisfying
+Command: self.units(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+Audio: send the overlord to Bear enemy base
+Command: self.units(UnitTypeId.OVERLORD).random.move(Point2((39, 23)))
+
+Audio: it shows
+Command: self.units(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+Audio: chose
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+Audio: I'm still
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: yeah
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+Audio: Overlord marches
+Command: self.units(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+Audio: I think
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: it's always writing these days I got
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: doesn't match
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: stupid
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+Audio: something like that
+Command: 
+Audio: discuss and evaluate what happened without having it
+Command: 
+Audio: no matter what you say it's either making Overlord
+Command: 
+Audio: Hydra
+Command: 
+Audio: make a Hydra
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+
+Audio: it's actually pretty like it here
+Command: 
+Audio: this is kind of janky right now but when I was in testing and like I was looking at the game and all I do
+Command: 
+Audio: that works very well
+Command: 
+Audio: anyway that's kind of state of the game
+Command: 
+Audio: the new
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+Audio: 00:00
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: I like that
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: it's somehow
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: battery
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERSEER)
+
+Audio: so that's why
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: begin test
+Command: 
+Audio: make a drone
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Audio: make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Audio: send the Drone away
+Command: self.units(UnitTypeId.DRONE).random.move(self.enemy_start_locations[0])
+
+Audio: take my drone Army and send them to the other side of the map and then turn around and come back
+Command: for unit in self.units(UnitTypeId.DRONE):
+    unit.move(Point2((30, 30)))
+    unit.move(Point2((0, 0)))
+
+Audio: hello
+Command: print("Hello World!")
+
+Audio: I love you
+Command: self.do(self.workers.random.attack(self.enemy_start_locations[0]))
+
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Command: for drone in self.workers:
+  drone.attack(self.enemy_start_locations[0])
+
+Command: self.units(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+Command: self.units(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+self.units(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+Command: for unit in self.units:
+   unit.attack(self.enemy_start_locations[0])
+
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.CORRUPTOR, UnitTypeId.BROODLORD}):
+   unit.attack(self.enemy_structures(UnitTypeId.PYLON).random)
+
+Command: for unit in self.units:
+   unit.attack(self.enemy_structures(UnitTypeId.PYLON).random)
+
+Command: for unit in self.units:
+  unit.attack(self.enemy_start_locations[0])
+
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.CORRUPTOR, UnitTypeId.BROODLORD}):
+   unit.attack(self.enemy_structures(UnitTypeId.PYLON).random)
+
+Command: for unit in self.units:
+  unit.attack(self.enemy_start_locations[0])
+
+Command: for broodlord in self.units(UnitTypeId.BROODLORD):
+  broodlord.attack(random.choice(self.enemy_structures))
+
+Audio: Gmail
+Command: await self.do_actions([
+  self.workers.random.move(self.enemy_start_locations[0]),
+  self.workers.random.attack(self.enemy_start_locations[0]),
+  self.workers.random.return_to_town
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.CORRUPTOR, UnitTypeId.BROODLORD}):
+   unit.attack(self.enemy_start_locations[0])
+
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Chat: make overlord
+Audio: make drone
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Chat: make overlord
+Audio: send Aldrin
+Command: self.do(self.units(UnitTypeId.DRONE).random.attack(self.enemy_start_locations[0]))
+
+Audio: call James to second base
+Command: self.do(self.workers.random.move(self.townhalls.second.position))
+
+Audio: send all drones to S Town Hall
+Command: for drone in self.workers:
+  drone.move(self.structures(UnitTypeId.SPAWNINGPOOL).random)
+
+Command: for overlord in self.units(UnitTypeId.OVERLORD):
+  overlord.move(self.enemy_start_locations[0])
+
+Chat: send overlord to enemy base
+Command: for drone in self.workers:
+  drone.attack(self.units(UnitTypeId.OVERLORD).random)
+
+Chat: send all drones to my overlord
+Command: for drone in self.workers:
+  drone.move(self.overlord.position)
+
+Chat: go to my overlord with all drones
+Command: for drone in self.workers:
+  drone.move(self.townhalls.first.position)
+
+Chat: go to second townhall with all drones
+Command: for unit in self.units:
+  unit.move(self.townhalls.second)
+
+Chat: go to townhall second with all units
+Command: for unit in self.units:
+  unit.move(self.townhalls.second)
+
+Chat: go to townhall second position with all units
+Command: await self.build(UnitTypeId.REFINERY, near=self.vespene_geyser.closest_to(self.townhalls.first))
+
+Chat: build a geyser
+Command: drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+Chat: build extractor
+Command: self.workers.random.build(UnitTypeId.EXTRACTOR, self.vespene_geyser.closest_to(self.workers.random.position))
+
+Chat: build hgas
+Command: for drone in self.workers:
+  drone.gather(self.mineral_field.closest_to(drone.position))
+
+Chat: mine mineral with all drones
+Command: self.larva.random.train(UnitTypeId.DRONE)
+
+Chat: learn zerg armor
+Command: for drone in self.workers:
+  drone.gather(self.vespene_geyser.closest_to(drone.position))
+
+Chat: work the gas
+Command: for drone in self.workers:
+  drone.attack(self.enemy_start_locations[0])
+
+Chat: spray with all drones
+Command: for x in range(16 - self.supply_workers):
+  self.workers.random.train(UnitTypeId.DRONE)
+
+Chat: makes all drones
+Command: for drone in self.workers:
+  drone.gather(self.mineral_field.closest_to(drone.position))
+
+Chat: all drones make
+Command: for x in range(3):
+  self.workers.random.build_gas(self.vespene_geyser.closest_to(self.workers.random.position))
+
+Chat: make three donres
+Command: for x in range(3):
+  self.workers.random.train(UnitTypeId.DRONE)
+
+Chat: make three drones
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+Chat: make a drone
+Command: for x in range(2):
+  self.workers.random.build(UnitTypeId.EXTRACTOR, self.vespene_geyser.closest_to(self.workers.random.position))
+
+Chat: make two donres
+Command: self.do(self.workers.random.build(UnitTypeId.EXTRACTOR, self.vespene_geyser.closest_to(self.workers.random.position)))
+
+Chat: build extractor
+Command: await self.build(UnitTypeId.SPIRE, near=self.townhalls.first)
+
+Chat: build spire
+Command: DronesAndOverlords = {UnitTypeId.DRONE, UnitTypeId.OVERLORD}
+
+Chat: group drone and overlord
+Command: for unit in self.units(DronesAndOverlords).idle:
+  unit.attack(self.enemy_start_locations[0])
+
+Chat: send group to enemy base
+Command: for x in range(3):
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Chat: make three overlords
+Command: for lair in self.units(UnitTypeId.LAIR).ready:
+  lair.research(UpgradeId.ZERGLINGMOVEMENTSPEED)
+
+Chat: evolve carapace
+Command: for x in range(3):
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+Chat: make three overlords
+Command: Crushers = {UnitTypeId.OVERLORD}
+
+Chat: group overlords into crushers
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.main_base_ramp.lower)
+
+
+Chat: send crushers to ramp
+Command: for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.move(self.units.of_type({UnitTypeId.OVERLORD}).random)
+
+
+Chat: send drones to crushers
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.attack(self.enemy_start_locations[0])
+
+
+Chat: send drones and crushers to attack enemy
+Command: for x in range(3):
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+Chat: send three crushers to my base
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+Chat: make zergling
+Audio: drones
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+Command: for x in range(3):
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+Chat: make three zergling
+Command: self.workers.random.build(UnitTypeId.EXTRACTOR, self.vespene_geyser.closest_to(self.townhalls.random))
+
+
+Chat: build vespene
+Command: self.workers.random.build(UnitTypeId.EXTRACTOR, self.vespene_geyser.closest_to(self.townhalls.random))
+
+
+
+Chat: another
+Command: self.workers.random.build(UnitTypeId.EXTRACTOR, self.vespene_geyser.closest_to(self.townhalls.random))
+
+
+
+Chat: another
+Command: self.workers.random.build(UnitTypeId.EXTRACTOR, self.vespene_geyser.closest_to(self.townhalls.random))
+
+
+
+Chat: another
+
+
+Audio: make an Overlord
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+Audio: suicide
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+Audio: hoodoo
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+Audio: tried to take all my zerglings and run at the enemy base but I don't have any credit cards
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+Audio: stop mining minerals
+Command: for drone in self.workers:
+  drone.stop()
+
+
+
+Audio: start getting minerals
+Command: for drone in self.workers:
+  drone.gather(self.mineral_field.closest_to(drone))
+
+
+
+
+Audio: Groupon
+Command: for unit in self.units.of_type({UnitTypeId.HYDRALISK}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+Audio: and overlords into leap crushers
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+Command: Leetcrushers = {UnitTypeId.OVERLORD, UnitTypeId.DRONE}
+
+
+
+Chat: group overlords and drones into leetcrushers
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+
+Chat: go fuck them up with leetcrushers
+
+
+Audio: assurance
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+
+
+Chat: attack with leetcrushers
+
+
+Audio: computation
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+Command: Leetcrushers = {UnitTypeId.DRONE, UnitTypeId.OVERLORD}
+
+
+
+
+Chat: group leetcrushers is drones and overlords
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+
+
+Chat: attack with leetcrushers
+
+
+Audio: attack with Elite crushers
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+
+
+
+
+Audio: this is so sad what happened in history
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+  unit.attack(self.enemy_start_locations[0])
+
+
+_______________________________________________________
+
+
+
+Audio: performance and speed is
+Command:   self.state.game_loop
+  
+
+
+Audio: make 100
+Command:   for x in range(100): 
+    self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+
+
+
+Audio: Lorde
+Command:   self.units.of_type({UnitTypeId.BROODLORD}).random.move(self.townhalls.second.position)
+
+
+
+Audio: ignoring
+Command:   self.ignore_units(self.units.of_type({UnitTypeId.HYDRALISK}).random)
+
+Command:   self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+  
+
+
+Chat: make overlord
+Command:   self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+  
+
+
+Chat: make two drones
+
+
+Audio: what's happening
+Command:   print(self.state.score.total_value_units)
+  print(self.state.score.total_value_structures)
+  print(self.state.score.killed_value_units)
+  print(self.state.score.killed_value_struct
+Command:   self.workers.random.stop()
+
+
+
+Chat: stop mining
+
+
+Audio: stop
+Command:   self.do(self.units.of_type({UnitTypeId.HYDRALISK}).random.stop())
+
+
+
+Audio: everything's good inherited
+Command:   
+Command: for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.attack(self.enemy_start_locations[0])
+
+
+
+Chat: send all drones at enemy
+Command: FunBuds = {UnitTypeId.DRONE, UnitTypeId.OVERLORD}
+
+
+
+Chat: group drones and overlord into FunBuds
+
+
+Audio: condolence
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.attack(self.enemy_start_locations[0])
+
+
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.move(self.townhalls.second.position)
+
+
+
+
+Chat: send FunBuds to my second
+
+
+Audio: I don't know what this is airing out
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.attack(self.enemy_start_locations[0])
+
+
+
+
+Audio: somehow
+Command: 
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+Chat: make two overlords
+Command: for x in range(2): 
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+  self.units
+
+
+Chat: make gas
+Command: for x in range(2): 
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+  self.units
+
+
+Chat: make vespene
+Command: for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.move(self.townhalls.first.position)
+
+
+
+Chat: send drones away
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+Chat: make overlord
+Command: drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+Chat: geyser
+Command: for x in range(2): 
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+  self.units
+
+
+Chat: build vespene
+Command: for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.move(self.townhalls.first.position)
+
+
+
+Chat: back to mining all drones
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.move(self.townhalls.first.position)
+
+
+
+Chat: back to mining
+Command: for drone in self.workers:
+  drone.gather(self.vespene_geyser.closest_to(self.townhalls.first))
+
+
+
+Chat: make all drones mine
+Command: await self.distribute_workers()
+
+
+
+
+Chat: redistribute workers
+Command: for drone in self.workers:
+  drone.gather(self.mineral_field.closest_to(self.townhalls.first))
+
+
+
+
+Chat: for each drone mine mineral
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.main_base_ramp.corner_depots.pop())
+
+
+
+
+Chat: send overlords to ramp
+Command: for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.move(self.units.of_type({UnitTypeId.OVERLORD}).random)
+
+
+
+
+Chat: send drones to back up overlords
+Command: for x in range(10): 
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+Chat: make a bunch of zerglings
+Command: await self.build(UnitTypeId.SPAWNINGPOOL, near=self.townhalls.first)
+
+
+
+
+Chat: make spawning pool
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+   unit.attack(self.enemy_start_locations[0])
+
+
+
+
+Chat: attack this dude!
+Command: for x in range(16 - self.supply_workers):
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+
+Chat: make drones
+Command: self.structures(UnitTypeId.SPIRE).ready.first.research(UpgradeId.ZERGFLYERARMOR)
+
+
+
+Chat: research carapace
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+   unit.attack(self.enemy_units.closest_to(self.townhalls.first))
+
+
+
+
+Chat: attack the attackers
+Command: self.workers.random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make drone
+
+
+Audio: Sandoval
+Command: 
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.enemy_start_locations[0].towards(self.game_info.map_center, random.randrange(8, 15)))
+
+
+
+Chat: send overlord to enemy ramp
+
+
+Audio: shoes
+Command: self.do(self.workers.random.move(self.townhalls.random.position))
+
+Command: larva: Unit = self.units(UnitTypeId.LARVA).random
+
+
+
+Chat: choose a larva to build spawning pool
+
+
+Audio: pictures of larvae
+Command: self.do(larva.build(UnitTypeId.SPAWNINGPOOL, self.main_base_ramp.barracks_correct_placement))
+
+
+Command: larva.train(UnitTypeId.DRONE)
+
+
+
+
+Chat: make drone
+Command: larva.build(UnitTypeId.SPAWNINGPOOL, self.main_base_ramp.barracks_correct_placement)
+
+
+
+
+Chat: build spawning pool with a larva
+Command: larva.build(UnitTypeId.SPAWNINGPOOL, self.main_base_ramp.barracks_correct_placement)
+
+
+
+
+Chat: build spawning pool using a random larva
+Command: larva.build(UnitTypeId.SPAWNINGPOOL, self.townhalls.random.position)
+
+
+
+
+Chat: build spawning pool with a drone
+Command: larva.build(UnitTypeId.SPAWNINGPOOL, self.main_base_ramp.barracks_correct_placement)
+
+
+
+
+Chat: build pool with drone
+Command: self.do(larva.build(UnitTypeId.SPAWNINGPOOL, self.main_base_ramp.barracks_correct_placement))
+
+
+
+
+Chat: build pool with worker
+Command: for drone in self.workers:
+  drone.move(self.townhalls.random.position)
+
+
+
+Chat: send all drones away
+Command: for drone in self.workers:
+  drone.move(self.game_info.map_center)
+
+
+
+
+Chat: send all drones to top of map
+Command: Lifeblood = {UnitTypeId.DRONE, UnitTypeId.OVERLORD}
+
+
+
+Chat: group drones and overlord as lifeblood
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.move(self.main_base_ramp.lower)
+
+
+
+
+Chat: send lifeblood to protect ramp
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.move(self.main_base_ramp.lower.position)
+
+
+
+
+Chat: lifeblood to lower ramp
+Command: for unit in self.units.of_type({UnitTypeId.DRONE, UnitTypeId.OVERLORD}):
+   unit.move(self.main_base_ramp.lower.center_location)
+
+
+Chat: lifeblood to ramp lower center
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make drone
+Command: await self.build(UnitTypeId.SPAWNINGPOOL, near=self.townhalls.first)
+
+
+
+Chat: build spawning pool
+Command: self.build(UnitTypeId.SPAWNINGPOOL, near=self.townhalls.first)
+
+
+
+Chat: make a happy little poolk
+Command: self.do(self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.vespene_geyser.closest_to(self.townhalls.first)))
+
+
+
+Chat: build happy pool
+Command: self.build(UnitTypeId.SPAWNINGPOOL, near=self.townhalls.first.position)
+
+
+
+
+Chat: make a little happy pool
+Command: self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+
+
+
+Chat: make a hydra
+Command: await self.build(UnitTypeId.SPAWNINGPOOL, near=self.townhalls.first.position)
+
+
+
+
+Chat: make happy little pool
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL)
+
+
+
+Chat: make a pool
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL)
+
+
+
+
+Chat: make a pool
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position)
+
+
+
+Chat: make apool
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls.random.position.towards(self.game_info.map_center, 5))
+
+
+
+Chat: make pool
+Command: for x in range(3): 
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+Chat: make three zerlgings
+Command: WeGonnaWin = {UnitTypeId.ZERGLING, UnitTypeId.DRONE}
+
+
+
+Chat: group zerlgings and drones into we gonna win
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.DRONE}):
+   unit.attack(self.main_base_ramp.lower)
+
+
+
+
+Chat: send we gonna win to enemy ramp
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.DRONE}):
+   unit.attack(self.enemy_start_locations[0])
+
+
+
+
+Chat: attack with we gonna win
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.DRONE}).random)
+
+
+
+
+Chat: send overlord to we gonna win
+Command: for x in range(10): 
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+
+Chat: make all zerlings
+Command: for x in range(5): 
+  self.units(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+
+Chat: make 5 overlords
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.DRONE}):
+   unit.move(self.townhalls.first.position)
+
+
+
+
+Chat: retreat all we gonna win
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.enemy_start_locations[0])
+
+
+
+
+
+Chat: send my overlord to their town
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.townhalls.first.position)
+
+
+
+
+
+Chat: send an overlord back to first
+Command: for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.game_info.map_center)
+
+
+
+
+
+Chat: send one overlord to center
+Command: self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+Chat: make overlord
+Command: self.units.of_type(UnitTypeId.OVERLORD).random.move(self.main_base_ramp.lower[0])
+
+
+
+Chat: send overlord to monitor them
+Command: self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+Chat: make an overlord
+Command: self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+
+
+Chat: send overlord to their base
+Command: for x in range(3): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make three drones
+Command: for x in range(22): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+
+Chat: make drones to 22
+Command: for range(20 - self.supply_workers):
+  self.townhalls.random.train(UnitTypeId.DRONE)
+
+
+
+
+Chat: get to 20 workers
+Command: drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+Chat: make gas
+Command: for x in range(10): 
+  drone: Unit = self.workers.random
+  drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+
+Chat: make gas 10 times
+Command: for x in range(3): 
+  self.workers.random.gather(self.gas_buildings.random)
+
+
+
+
+Chat: get gas with three
+Command: for x in range(5): 
+  self.workers.random.gather(self.gas_buildings.random)
+
+
+
+
+Chat: get gas with five more workers
+Command: self.townhalls.first.train(UnitTypeId.QUEEN)
+
+
+
+
+Chat: make queen
+Command: self.units.of_type(UnitTypeId.OVERLORD).closer_than(30, self.townhalls[0].position).random.move(self.townhalls[0])
+
+
+
+
+Chat: retreat overlord
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 5))
+
+
+
+
+Chat: make pool
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 5))
+
+
+
+
+
+Chat: build pool
+Command: for x in range(10): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+
+
+Chat: make more drones
+Command: for x in range(2): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+
+
+Chat: make two drones
+Command: self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+
+
+
+
+Chat: send overlord to their base
+Command: self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+
+
+
+Chat: make overlord
+Command: self.townhalls.first.research(UpgradeId.ZERGLINGMOVEMENTSPEED)
+
+
+
+
+
+
+Chat: with townhall make carapace
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+   unit.attack(self.enemy_units.random)
+
+
+
+
+
+
+Chat: attack zergling
+Command: for x in range(3): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+
+
+
+Chat: make three drones
+Command: self.townhalls.first.train(UnitTypeId.QUEEN)
+
+
+
+
+
+
+
+Chat: make queen
+Command: for x in range(2): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+
+
+
+
+Chat: make two zerglings
+Command: self.townhalls.first.build(UnitTypeId.LAIR)
+
+
+
+
+
+
+
+
+Chat: make lair
+Command: self.units.of_type(UnitTypeId.QUEEN).random(AbilityId.EFFECT_INJECTLARVA, self.townhalls[0])
+
+
+
+
+
+
+
+
+Chat: inject queen
+Command: for x in range(10): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+
+
+
+
+
+Chat: make 10 zerglings
+Command: self.structures(UnitTypeId.HATCHERY).random.train(UnitTypeId.SPAWNINGPOOL)
+
+
+
+
+
+
+
+
+
+
+Chat: get metabolic boost with hatchery
+Command: self.structures(UnitTypeId.SPAWNINGPOOL).random.train(UnitTypeId.SPAWNINGPOOL)
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: get metabolic boost with spawning pool
+Command: self.units.of_type(UnitTypeId.OVERLORD).closer_than(30, self.townhalls[0].position).random.move(self.townhalls[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: retreat overlord
+Command: for x in range(3): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make three zerlgings
+Command: for x in range(2): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make two overlords
+Command: for x in range(3): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make three zerglings
+Command: self.townhalls.first.train(UnitTypeId.QUEEN)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make a queen
+Command: for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.attack(self.enemy_units.random)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: attack enemy with drones
+Command: for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.gather(self.vespene_geyser.closest_to(unit.position))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: mine with drones
+Command: for x in range(5): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make five zerglings
+Command: for x in range(self.units.of_type({UnitTypeId.ZERGLING}).count // 2):
+  self.units.of_type({UnitTypeId.ZERGLING}).random.move(self.enemy_start_locations[0])
+
+
+
+
+Chat: send half of zerglings to enemy base
+Command: for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+   unit.attack(self.enemy_start_locations[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: send zerglings to enemy base
+Command: self.units.of_type(UnitTypeId.QUEEN).random.attack(self.enemy_start_locations[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: send queen to enemy base
+Command: self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make overlord
+Command: for x in range(2): 
+  self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: send two overlords to enemy
+Command: self.units.of_type(UnitTypeId.OVERLORD).random.move(self.townhalls[0].position.towards(self.game_info.map_center, 10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: send overlord near my base to center of map
+Command: self.townhalls.first.build(UnitTypeId.LAIR)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make lair
+Command: self.workers.random.build(UnitTypeId.SPIRE, self.townhalls[0].position.towards(self.game_info.map_center, 10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make spire
+Command: for x in range(5): 
+  self.workers.random.build(UnitTypeId.SPIRE, self.townhalls[0].position.towards(self.game_info.map_center, 10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: make five spires
+Command: self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chat: build a spire on ramp
+Command: self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make drone
+Command: for x in range(self.units.of_type(UnitTypeId.DRONE).count // 2):
+  self.units.of_type(UnitTypeId.DRONE).random.move(self.game_info.map_center)
+
+
+
+Chat: send half drones to map center
+Command: drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+Chat: make vespene
+Command: self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+
+
+Chat: send overlord to watch their base
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 5))
+
+
+
+
+Chat: build pool
+Command: self.research(UpgradeId.ZERGGROUNDARMORSLEVEL1)
+
+
+
+Chat: research carapace
+Command: for x in range(3): 
+  self.workers.random.gather(self.gas_buildings.random)
+
+
+
+
+Chat: get gas with three
+Command: for x in range(1): 
+  self.workers.random.gather(self.gas_buildings.random)
+
+
+
+
+Chat: get gas with one more
+Command: for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.OVERLORD)
+
+
+
+
+Chat: make full overlords
+Command: self.townhalls.first.train(UnitTypeId.QUEEN)
+
+
+
+
+Chat: make queen
+Command: self.research(UpgradeId.ZERGLINGMOVEMENTSPEED)
+
+
+
+
+Chat: get zerg flier speed research
+Command: for x in range(2): 
+  self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+
+
+
+Chat: send overlords to enemy spawn 2
+Command: self.units.of_type(UnitTypeId.OVERLORD).closer_than(30, self.enemy_start_locations[0]).random.move(self.townhalls[0])
+
+
+
+
+
+Chat: retreat overlords
+Command: self.units.of_type(UnitTypeId.QUEEN).random(AbilityId.EFFECT_INJECTLARVA, self.townhalls[0])
+
+
+
+
+
+Chat: inject
+Command: drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+
+
+Chat: build gas
+Command: for x in range(20): 
+  drone: Unit = self.workers.random
+  drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+
+
+Chat: build 20 gas
+Command: self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+
+
+Chat: send overlord to watch
+Command: for x in range(22 - self.supply_workers): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make full drones
+Command: self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+Chat: make overlord
+Command: self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make drone
+Command: drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+Chat: make vespene
+Command: for x in range(2): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+
+
+
+Chat: make two overlords
+Command: self.units.of_type(UnitTypeId.OVERLORD).closer_than(20, self.townhalls[0]).random.move(self.main_base_ramp.corner_depots.pop())
+
+
+
+Chat: send overlord near my base to ramp
+Command: for x in range(22 - self.supply_workers): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make drones
+Command: for x in range(3): 
+  self.workers.random.gather(self.gas_buildings.random)
+
+
+
+Chat: send three drones to gas
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 10))
+
+
+
+Chat: make spawning pool
+Command: self.research(UpgradeId.OVERLORDSPEED)
+
+
+
+Chat: get overlord speed
+Command: for unit in self.units.of_type(UnitTypeId.OVERLORD):
+  unit.move(self.townhalls[0])
+
+
+
+Chat: retreat overlord
+Command: self.townhalls.first.train(UnitTypeId.QUEEN)
+
+
+
+Chat: make queen
+Command: self.research(UpgradeId.ZERGLINGMOVEMENTSPEED)
+
+
+
+Chat: research metabolic
+Command: self.research(UpgradeId.OVERLORDSPEED)
+
+
+
+Chat: research overlord speed
+Command: self.units.of_type(UnitTypeId.QUEEN).random(AbilityId.EFFECT_INJECTLARVA, self.townhalls[0])
+
+
+
+Chat: inject
+Command: for x in range(22 - self.supply_workers): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+
+
+
+Chat: make full drones
+Command: self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+
+
+
+Chat: send overlord to monitor
+Command: for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.OVERLORD)
+
+
+
+Chat: make full overlords
+Command: for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.DRONE)
+
+
+
+Chat: make full drones
+Command: drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+
+
+
+Chat: build gas
+Command: self.units.of_type(UnitTypeId.OVERLORD).closer_than(20, self.townhalls[0]).random.move(self.main_base_ramp.corner_depots.pop())
+
+
+
+Chat: send overlord near my base to the ramp
+Command: for x in range(3): 
+  self.workers.random.gather(self.gas_buildings.random)
+
+
+
+Chat: get gas with three
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 20))
+
+
+
+Chat: build pool
+Command: self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 20))
+
+
+
+Chat: build pool close to my base
+Command: self.research(UpgradeId.ZERGLINGMOVEMENTSPEED)
+
+
+
+Chat: research metabolic
+Command: self.townhalls.first.train(UnitTypeId.QUEEN)
+
+
+
+Chat: get queen
+Command: self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
+
+
+
+Chat: build spire on the ramp
+Command: self.townhalls.first.build(UnitTypeId.LAIR)
+
+
+
+Chat: make lair
+Command: self.units.of_type(UnitTypeId.QUEEN).random(AbilityId.EFFECT_INJECTLARVA, self.townhalls[0])
+
+
+
+Chat: inject
+Command: self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
+
+
+
+Chat: make spire at ramp
+Command: self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
+
+
+
+Chat: make spire at ramp

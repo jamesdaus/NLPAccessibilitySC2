@@ -12,9 +12,11 @@ with open('data.txt', 'r') as dataFile:
 
 
 def generateCommand(userInput):
+    with open('command_history.txt', 'r') as dataFile:
+        commandHistory = dataFile.read().replace('\r\n', '\n').replace('\r', '\n')
     command = openai.Completion.create(
         engine="davinci-codex",
-        prompt= training + '# ' + userInput + '\n',
+        prompt= training + commandHistory + '# ' + userInput + '\n', 
         temperature=0,
         max_tokens=64,
         top_p=1,
@@ -35,16 +37,11 @@ def printCommand():
         print(commandFile.read())
 
 def main():
-    '''
-    audioParser = AudioParser()
-    while True:
-        #command = generateCommand(input('Enter Command: '))
-        voice = audioParser.getAudio()
-        if voice:
-            command = generateCommand(voice)
-            updateCommand(command)
-            printCommand()
-    '''
+    print(generateCommand("group Base blasters are hydras"))
+    with open('command_history.txt', 'a') as dataFile:
+        dataFile.write("# group Base blasters are hydras\n")
+        dataFile.write("BaseBlasters = {UnitTypeId.HYDRALISK}")
+    print(generateCommand("attack enemy base with base blasters"))
 
 if __name__ == "__main__":
     main()

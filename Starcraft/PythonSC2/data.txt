@@ -1,6 +1,210 @@
 # Converting player commands into Starcraft 2 actions using pysc2 and Python 3
-# make a hydra
-self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+
+# retreat all units near enemy base
+for unit in self.units.closer_than(30, self.enemy_start_locations[0]):
+  unit.move(self.townhalls[0])
 # make 10 hydras
+for x in range(10): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+# attack their base with my workers
+for worker in self.workers:
+  worker.attack(self.enemy_start_locations[0])
+# build gas
+drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+# get to sixteen workers:
+for range(16 - self.supply_workers):
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# move a random zergling to the center of the map
+self.units.of_type(UnitTypeId.ZERGLING).random.move(self.game_info.map_center))
+#inject hatch
+self.units.of_type(UnitTypeId.QUEEN).random(AbilityId.EFFECT_INJECTLARVA, self.townhalls[0])
+#send overlord to watch enemy
+self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+# make a pool
+self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 5))
+# make a drone
+self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# make an overlord and two drones
+self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+for x in range(2): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# build queen
+self.townhalls[0].train(UnitTypeId.QUEEN)
+# assign zerglings corruptors and broodlord to frontline
+frontline = {UnitTypeId.ZERGLING, UnitTypeId.CORRUPTOR, UnitTypeId.BROODLORD}
+# make a corruptor
+self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.CORRUPTOR)
+# make a broodlord
+self.units.of_type(UnitTypeId.CORRUPTOR).random.train(UnitTypeId.BROODLORD)
+# make lair
+self.townhalls.first.build(UnitTypeId.LAIR)
+# make vespene
+drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+# upgrade to hive
+self.townhalls.first.build(UnitTypeId.HIVE)
+# build infestation pit
+self.workers.random.build(UnitTypeId.INFESTATIONPIT, self.townhalls[0].position.towards(self.game_info.map_center, 10))
+# make a spire
+self.workers.random.build(UnitTypeId.SPIRE, self.townhalls[0].position.towards(self.game_info.map_center, 10))
+# bring all units near enemies back to base
+for unit in self.units:
+  for enemy_unit in self.enemy_units:
+    if enemy_unit.distance_to(unit) < 15:
+      unit.move(self.townhalls[0])
+# geyser
+drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+# attack their gas with hyrdalisks
+for unit in self.units.of_type({UnitTypeId.HYDRALISK}):
+   unit.attack(self.enemy_structures.of_type{UnitTypeId.EXTRACTOR}.random)
+# get a greater spire
+self.structures(UnitTypeId.SPIRE).random.build(UnitTypeId.GREATERSPIRE)
+# upgrade to greater spire
+self.structures(UnitTypeId.SPIRE).random.build(UnitTypeId.GREATERSPIRE)
+# send five to get gas
+for x in range(5): 
+  self.workers.random.gather(self.gas_buildings.random)
+# bring back my overlord
+self.units.of_type(UnitTypeId.OVERLORD).closer_than(30, self.enemy_start_locations[0]).random.move(self.townhalls[0])
+# send ten of frontline to attack
 for x in range(10):
-    self.units(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+  self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.CORRUPTOR, UnitTypeId.BROODLORD}).random.attack(self.enemy_start_locations[0])
+# retreat frontline from enemy base
+for unit in self.units.of_type({UnitTypeId.ZERGLING, UnitTypeId.CORRUPTOR, UnitTypeId.BROODLORD}).closer_than(30, self.enemy_start_locations[0]):
+  unit.move(self.townhalls[0])
+# retreat all units under attack
+for unit in self.units:
+  for enemy_unit in self.enemy_units:
+    if enemy_unit.distance_to(unit) < 15:
+      unit.move(self.townhalls[0])
+# attack a random building with zerglings
+for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+   unit.attack(self.enemy_structures.random)
+# attack their base with every unit
+for unit in self.units:
+   unit.attack(self.enemy_start_locations[0])
+# group broodlords and drones into Starkillers
+Starkillers = {UnitTypeId.DRONE, UnitTypeId.BROODLORD}
+# base blasters is hydras
+BaseBlasters = {UnitTypeId.HYDRALISK}
+# back up my base blasters with my overlords
+for unit in self.units.of_type({UnitTypeId.OVERLORD}):
+   unit.move(self.units.of_type({UnitTypeId.HYDRALISK}).random)
+# send two base blasters to second
+for x in range(2): 
+  self.units.of_type({UnitTypeId.HYDRALISK}).random.move(self.townhalls.second.position)
+# make a hydra
+self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.HYDRALISK)
+# build hatch
+self.workers.random.build(UnitTypeId.HATCHERY, self.expansion_locations_list[0])
+# build a spire on the ramp
+self.do(self.workers.gathering.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop()))
+# send base blasters to protect ramp
+for unit in self.units.of_type({UnitTypeId.HYDRALISK}):
+   unit.move(self.main_base_ramp.lower[0])
+# make full overlords
+for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.OVERLORD)
+# make an overlord
+self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+# send overlord to their base
+self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+# make three drones
+for x in range(3): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# create drones until 22
+for x in range(22 - self.supply_workers): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# make gas 10 times
+for x in range(10): 
+  drone: Unit = self.workers.random
+  drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+# get gas with three
+for x in range(3): 
+  self.workers.random.gather(self.gas_buildings.random)
+# get gas with five more workers
+for x in range(5): 
+  self.workers.random.gather(self.gas_buildings.random)
+# make queen
+self.townhalls.first.train(UnitTypeId.QUEEN)
+# retreat overlord
+self.units.of_type(UnitTypeId.OVERLORD).closer_than(30, self.enemy_start_locations[0]).random.move(self.townhalls[0])
+# make pool
+self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 5))
+# build pool
+self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 5))
+# make more drones
+for x in range(10): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# make two drones
+for x in range(2): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# send overlord to monitor them
+self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+# spawn overlord
+self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.OVERLORD)
+# attack zergling
+for unit in self.units:
+   unit.attack(self.enemy_units.of_type(UnitTypeId.ZERGLING).random)
+# make three drones
+for x in range(3): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.DRONE)
+# make my queen
+self.townhalls.first.train(UnitTypeId.QUEEN)
+# attack their units
+for unit in self.units:
+   unit.attack(self.enemy_units.random)
+# make two zerglings
+for x in range(2): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+# make lair
+self.townhalls.first.build(UnitTypeId.LAIR)
+# inject queen
+self.units.of_type(UnitTypeId.QUEEN).random(AbilityId.EFFECT_INJECTLARVA, self.townhalls[0])
+# make 10 zerglings
+for x in range(10): 
+  self.units.of_type(UnitTypeId.LARVA).random.train(UnitTypeId.ZERGLING)
+# make all zerglings
+for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.ZERGLING)
+# attack enemy with drones
+for unit in self.units.of_type(UnitTypeId.DRONE):
+   unit.attack(self.enemy_units.random)
+# mine with drones
+for unit in self.units.of_type({UnitTypeId.DRONE}):
+   unit.gather(self.mineral_field.closest_to(unit.position))
+# send zerglings to enemy base
+for unit in self.units.of_type({UnitTypeId.ZERGLING}):
+   unit.attack(self.enemy_start_locations[0])
+# send queen to enemy base
+self.units.of_type(UnitTypeId.QUEEN).random.attack(self.enemy_start_locations[0])
+# send two overlords to enemy
+for x in range(2): 
+  self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+# send overlord near my base to center of map
+self.units.of_type(UnitTypeId.OVERLORD).closer_than(20, self.townhalls[0]).random.move(self.game_info.map_center)
+# upgrade to lair
+self.townhalls.first.build(UnitTypeId.LAIR)
+# make spire
+self.workers.random.build(UnitTypeId.SPIRE, self.townhalls[0].position.towards(self.game_info.map_center, 20))
+# make five spires
+for x in range(5): 
+  self.workers.random.build(UnitTypeId.SPIRE, self.townhalls[0].position.towards(self.game_info.map_center, 20))
+# build a spire on ramp
+self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
+# research carapace
+self.research(UpgradeId.OVERLORDSPEED)
+# get fly speed with townhall
+self.research(UpgradeId.OVERLORDSPEED)
+# upgrade metabolic
+self.research(UpgradeId.ZERGLINGMOVEMENTSPEED)
+# retreat overlords
+for unit in self.units.of_type(UnitTypeId.OVERLORD):
+  unit.move(self.townhalls[0])
+# make full drones
+for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.DRONE)
+# build pool close to my base
+self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 5))

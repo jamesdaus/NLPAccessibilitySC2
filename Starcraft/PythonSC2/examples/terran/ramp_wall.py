@@ -277,7 +277,8 @@ def main():
     )
     map = "PillarsofGoldLE"
     sc2.run_game(
-        sc2.maps.get(map),
+        sc2.maps.get("BlackburnAIE"),
+        #sc2.maps.get(map),
         [Bot(Race.Terran, RampWallBot()), Computer(Race.Zerg, Difficulty.Hard)],
         realtime=True,
         # sc2_version="4.10.1",

@@ -1,0 +1,34 @@
+# send overlord to monitor
+self.units.of_type(UnitTypeId.OVERLORD).random.move(self.enemy_start_locations[0])
+# make full overlords
+for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.OVERLORD)
+# make full drones
+for unit in self.units.of_type(UnitTypeId.LARVA):
+  unit.train(UnitTypeId.DRONE)
+# build gas
+drone: Unit = self.workers.random
+drone.build_gas(self.vespene_geyser.closest_to(drone.position))
+# send overlord near my base to the ramp
+self.units.of_type(UnitTypeId.OVERLORD).closer_than(20, self.townhalls[0]).random.move(self.main_base_ramp.corner_depots.pop())
+# get gas with three
+for x in range(3): 
+  self.workers.random.gather(self.gas_buildings.random)
+# build pool
+self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 20))
+# build pool close to my base
+self.workers.random.build(UnitTypeId.SPAWNINGPOOL, self.townhalls[0].position.towards(self.game_info.map_center, 20))
+# research metabolic
+self.research(UpgradeId.ZERGLINGMOVEMENTSPEED)
+# get queen
+self.townhalls.first.train(UnitTypeId.QUEEN)
+# build spire on the ramp
+self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
+# make lair
+self.townhalls.first.build(UnitTypeId.LAIR)
+# inject
+self.units.of_type(UnitTypeId.QUEEN).random(AbilityId.EFFECT_INJECTLARVA, self.townhalls[0])
+# make spire at ramp
+self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
+# make spire at ramp
+self.workers.random.build(UnitTypeId.SPIRE, self.main_base_ramp.corner_depots.pop())
