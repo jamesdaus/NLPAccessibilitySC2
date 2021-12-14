@@ -1,2 +1,2 @@
-# NLPAccessibilityUnity
-Creating accessibility tools for Unity using NLP
+# NLPAccessibilitySC2
+Creating accessibility tools for SC2 using GPT-3
